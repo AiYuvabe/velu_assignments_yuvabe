@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 import sys
-src_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "main"))
+src_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "backend"))
 sys.path.append(src_directory)
 from utils import logger
 

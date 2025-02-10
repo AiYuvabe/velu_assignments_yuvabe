@@ -1,11 +1,9 @@
 import os
 import sys
-src_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "main"))
+src_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "frontend"))
 sys.path.append(src_directory)
 import streamlit as st
-from modules import home_page
 import streamlit_functions
-from utils import logger
 
 st.title("World Population Data")
 csv_file = st.file_uploader("Choose a CSV file", type=['csv'])

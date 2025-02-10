@@ -1,9 +1,8 @@
 from fastapi import FastAPI
 import os
 import sys
-src_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "main"))
+src_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "backend"))
 sys.path.append(src_directory)
-import end_points
 from modules import home_page
 from api.schema import CountryDetails
 from utils import logger
